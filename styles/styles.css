@@ -1,0 +1,20 @@
+html {
+    font-size: 1vw;
+}
+body {
+    margin: 5vw;
+}
+
+h1 {
+    border-bottom: 10px solid black;
+}
+
+#info {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25%;
+}
+
+p, ul {
+    margin-left: 8em;
+}
