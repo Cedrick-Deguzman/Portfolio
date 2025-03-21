@@ -1,90 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <h1>De Guzman, Jonald Cedrick Ramos</h1>
-    <div id="info">
-    <p>Phone: +63 939 223 8514</p>
-    <P>Address: 0225 Talabahan Bagna, Malolos Bulacan</P>
-    <p>Email: jonaldcedrick.deguzman@gmail.com</p>
-    <p>Date of Birth: May 03, 2001</p>
-    </div>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <h2>Career Objective:</h2>
-    <p>Motivated and detail-oriented professional with a strong background in data entry, seeking to 
-        transition back into programming. Passionate about problem-solving and software 
-        development, with experience in data management and accuracy. Eager to leverage analytical 
-        skills and programming knowledge to develop efficient solutions, enhance workflows, and 
-        contribute to a dynamic tech-driven environment. Committed to continuous learning and 
-        staying updated with the latest technologies to drive innovation and efficiency.</p>
-    <section id="Skills">
-    <h2>Personal Skill:</h2>
-    <ul> 
-        <li>Strong written and verbal communication skills.</li>
-        <li>Able to work independently and collaborate effectively within a team. </li>
-        <li>Good critical thinking and problem-solving abilities.</li>
-        <li>Skilled in making decisions to resolve issues efficiently.</li>
-        <li>High attention to detail and accuracy. </li>
-        <li>Quick to learn new tasks and skills. </li>
-        <li>Flexible and adaptable to changing situations.</li>
-    </ul>
-    </section>   
+    <nav id="navbar">
+        <h1>Jonald Cedrick De Guzman</h1>
+        <button class="menu-toggle">☰</button>
+        <ul id="nav-links">
+            <li><a href="#index">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-    <h2>Education:</h2>
-        <p>Bachelor of Science in Information Technology (2019 – 2023)</p>
-        <p>Dr. Yanga’s College Inc.</p>
-        <p>Bocaue Bulacan</p>
-    </section id="Education">
-
-    <section id="pre-professional">
-    <h2>PRE-PROFESSIONAL EXPERIENCE</h2>
-    <h3>Developer Intern IT Department</h3>
-    <h3>Dr. Yanga’s College Inc.</h3>
-    <ul>
-        <li>Develop a mobile application.</li>
-        <li>Responsible for the development of user interface interactions.</li>
-        <li>Established version control using Git.</li>
-        <li>Established and maintained database connections.</li>
-    </ul>
-    
-    <h2>OCTOBER 2023 – FEBRUARY 2024 </h2>
-    <h3>Frontend Intern</h3>
-    <h3>NutriCoach</h3>
-    <ul>
-        <li>Implemented mobile user interfaces based on provided designs.</li>
-        <li>Utilized React to implement dynamic and responsive user interfaces, contributing to the overall 
-            functionality of the mobile application. </li>
-        <li>Integrated and configured React Testing Library to conduct comprehensive testing of 
-            application components, ensuring reliability and identifying potential issues.  </li>
-        <li>Collaborated with the development team to address and resolve UI-related bugs and issues in 
-            timely manner.</li>
-    </ul>
-    </section>
-
-    <section id="professional">
-    <h2>PROFESSIONAL EXPERIENCE</h2>
-    <h3>February 2024 - PRESENT</h3>
-    <h3>Data Entry Operator </h3>
-    <h3>RT Lawrence Corporation Philippine Branch</h3>
-    <ul>
-        <li>Conducted thorough data quality checks and verification processes to ensure accuracy and 
-            reliability of information.</li>
-        <li>Executed efficient system data entry tasks, maintaining a high level of precision and attention 
-            to detail.</li>
-        <li>Processed payments and deposits promptly and accurately, contributing to smooth financial 
-            transactions.</li>
-        <li>Handled the scanning and processing of payments and checks while following strict security 
-            and procedure guidelines. </li>
-        <li>Managed the preparation and submission of financial data to the bank, taking on supervisor
-            level responsibilities to ensure secure and timely processing.</li>
-        <li>Trained and mentored new staff, providing guidance on processes and ensuring they 
-            understood system procedures for accurate data entry and financial transactions.</li>
-    </ul>
-    </section>
+    <nav id="context">
+        <h2>Hello! I'm Cedrick</h2>
+        <div class="container">
+            <div class="text">
+                <p>Hello! I'm Jonald Cedrick De Guzman, an aspiring developer with a strong passion for learning and
+                    problem-solving. I'm a fast learner who thrives on tackling logical challenges and continuously
+                    improving my skills. My goal is to become a proficient developer, building innovative and efficient
+                    solutions. I'm eager to grow, take on new challenges, and contribute to exciting projects in the
+                    tech industry.</p>
+                <button onclick="window.open('https://www.linkedin.com/in/cedrick-deguzman-a9533b247/', '_blank')">View LinkedIn</button>
+                <button onclick="window.open('https://github.com/Cedrick-Deguzman', '_blank')">View Github</button>
+            </div>
+            <div class="image">
+                <img src="/src/profile.jpg" alt="Cedrick's Picture">
+            </div>
+        </div>
+    </nav>
 </body>
+
+</body>
+
 </html>

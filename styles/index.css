@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 300px;
+}
+
+nav#navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav#navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav#navbar ul li {
+    margin: 0 10px;
+}
+
+nav#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Context Section */
+nav#context {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Align text and image in the center */
+    justify-content: center; /* Center content horizontally */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 20px; /* Add spacing between elements */
+    max-width: 900px; /* Set a max width to keep it neat */
+    margin: 50px auto; /* Center container with top/bottom margin */
+    padding: 20px; /* Add some padding */
+    text-align: left; /* Ensure text is aligned properly */
+}
+
+/* Adjust text container */
+.text {
+    flex: 1; /* Take up remaining space */
+    min-width: 300px; /* Ensure it doesn't shrink too much */
+    font-size: large;
+}
+
+/* Adjust image container */
+.image {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center the image */
+}
+
+.image img {
+    max-width: 250px; /* Make image responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+button {
+    border-radius: 15px;
+    padding: 12px 24px; /* Increase padding for a larger button */
+    font-size: 16px; /* Increase font size for better readability */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav#navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav#navbar ul.show {
+        display: flex;
+    }
+
+    nav#navbar ul li {
+        margin: 15px 0;
+    }
+
+    .container {
+        flex-direction: column; /* Stack items on smaller screens */
+        text-align: center;
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+    .text, .image {
+        flex: none;
+        width: 100%;
+    }
+}
