@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Navigation Bar */
+
 nav#navbar {
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ nav#navbar ul li a {
     text-decoration: none;
 }
 
-/* Mobile Menu Button */
+
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -47,7 +47,6 @@ nav#navbar ul li a {
     cursor: pointer;
 }
 
-/* Context Section */
 nav#context {
     width: auto;
     text-align: center;
@@ -56,39 +55,39 @@ nav#context {
 
 .container {
     display: flex;
-    align-items: center; /* Align text and image in the center */
-    justify-content: center; /* Center content horizontally */
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    gap: 20px; /* Add spacing between elements */
-    max-width: 900px; /* Set a max width to keep it neat */
-    margin: 50px auto; /* Center container with top/bottom margin */
-    padding: 20px; /* Add some padding */
-    text-align: left; /* Ensure text is aligned properly */
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 900px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    text-align: left; 
 }
 
-/* Adjust text container */
+
 .text {
-    flex: 1; /* Take up remaining space */
-    min-width: 300px; /* Ensure it doesn't shrink too much */
+    flex: 1; 
+    min-width: 300px; 
     font-size: large;
 }
 
-/* Adjust image container */
+
 .image {
-    flex: 1; /* Take up equal space */
-    text-align: center; /* Center the image */
+    flex: 1; 
+    text-align: center; 
 }
 
 .image img {
-    max-width: 250px; /* Make image responsive */
+    max-width: 250px; 
     height: auto;
-    border-radius: 10px; /* Optional: rounded corners */
+    border-radius: 10px; 
 }
 
 button {
     border-radius: 15px;
-    padding: 12px 24px; /* Increase padding for a larger button */
-    font-size: 16px; /* Increase font size for better readability */
+    padding: 12px 24px; 
+    font-size: 16px; 
     background-color: black;
     color: white;
     cursor: pointer;
@@ -121,9 +120,9 @@ button {
     }
 
     .container {
-        flex-direction: column; /* Stack items on smaller screens */
+        flex-direction: column; 
         text-align: center;
-        margin: 20px; /* Reduce margin for smaller screens */
+        margin: 20px; 
     }
     .text, .image {
         flex: none;
